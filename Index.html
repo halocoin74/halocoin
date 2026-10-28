@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Coin - Coming Soon</title>
+    <style>
+        :root {
+            --bg-dark: #111827;
+            --teal: #50E3C2;
+            --blue: #4A90E2;
+            --gold: #FFD700;
+            --text: #F9FAFB;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 20px;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #FFF, var(--teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-size: 20px;
+            color: var(--teal);
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .announcement {
+            font-size: 16px;
+            color: #A0AEC0;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        /* Animated floating halos based on your creative vision */
+        .particle {
+            position: absolute;
+            bottom: -50px;
+            border-radius: 50%;
+            animation: floatUp 8s infinite linear;
+            opacity: 0.3;
+        }
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) scale(0.5);
+                border: 2px solid var(--blue);
+                box-shadow: 0 0 10px var(--blue);
+            }
+            50% {
+                border: 2px solid var(--teal);
+                box-shadow: 0 0 15px var(--teal);
+            }
+            100% {
+                transform: translateY(-110vh) scale(1.2);
+                border: 3px solid var(--gold);
+                box-shadow: 0 0 25px var(--gold);
+                border-radius: 50%; /* Smoothly morphs fully into your halo vision */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ambient Backgound Halos -->
+<div class="particle" style="left: 10%; width: 30px; height: 15px; animation-delay: 0s; animation-duration: 7s;"></div>
+<div class="particle" style="left: 30%; width: 40px; height: 20px; animation-delay: 2s; animation-duration: 9s;"></div>
+<div class="particle" style="left: 75%; width: 25px; height: 12px; animation-delay: 4s; animation-duration: 6s;"></div>
+<div class="particle" style="left: 85%; width: 50px; height: 25px; animation-delay: 1s; animation-duration: 11s;"></div>
+
+<div class="container">
+    <h1>HALO COIN</h1>
+    <p class="tagline">Win a prize and bless a cause with every play. 👼</p>
+    <p class="announcement">
+        We are currently minting a revolutionary, purpose-driven prize competition platform. 
+        Soon, you will be able to play for trending eco-tech, premium collectibles, and high-energy gear 
+        for mere pennies—while automatically directing game-changing funding straight to global children, 
+        animal, and environmental conservation charities.
+    </p>
+    <div style="font-weight: bold; color: var(--gold); letter-spacing: 1px;">MINTING LAUNCH DRAWS • AUTUMN 2026</div>
+</div>
+
+</body>
+</html>
